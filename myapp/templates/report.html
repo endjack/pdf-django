@@ -1,24 +1,55 @@
+{% comment %} {% load static %} {% endcomment %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% comment %} <link href="{% static 'css/css_boot.css' %}" rel="stylesheet"> {% endcomment %}
     <title>{{report_id}}</title>
     <style>
-        body {
-            color: blue;
-            font-family: verdana;
-            font-size: 300%;
-            text-align: center;
-          }
+       
     </style>
 </head>
 <body>
+    <div class="text-center text-danger">
     <h1>This is the report page for {{name}}.You can download it in PDF format.</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta debitis libero non porro aperiam inventore cumque delectus molestias, explicabo consequatur obcaecati sit harum repudiandae exercitationem, impedit veritatis iste nesciunt praesentium.</p>
-    <h1> The amount is {{amount}}</h1>
-    <h1> The ID is {{id}}</h1>
+    </div>
+    <div class="container">
+        <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+
 
 </body>
 </html>

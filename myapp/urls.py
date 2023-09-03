@@ -1,9 +1,10 @@
 from django.urls import path
 from . import views
-from .views import GeneratePdf
+from .views import *
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('pdf/', GeneratePdf.as_view(),name='pdf'), 
+
+    path('pdf_pdfkit/<str:type>', pdf_from_template, name='pdfkit'), 
 
 ]
