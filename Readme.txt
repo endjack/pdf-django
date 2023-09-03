@@ -1,1 +1,3 @@
-Hello Makers this project is made by MakersGroup youtube channel to generate pdf from html file in django using xhtml2pdf python library.
+Como gerar um PDF com PdfKit. 
+PDF com Css local e Bootstrap
+Visualizando e Fazendo Download.
